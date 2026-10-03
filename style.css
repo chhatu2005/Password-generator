@@ -1,0 +1,141 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6541c1, #ff6a88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.container
+{
+    max-width: 520px;
+    width: 100%;
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid red;
+}
+
+.container h1
+{
+    text-align: center;
+    align-items: center;
+    color: blue;
+    margin-bottom: 25px;
+}
+
+.container label
+{
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+input[type="number"] 
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.option
+{
+    margin-bottom: 20px;
+    display: grid;
+     grid-template-columns: repeat(2,1fr);   
+}
+
+.option label
+{
+    margin-bottom: 12px;
+}
+
+.option input
+{
+    margin-right: 8px;
+}
+
+button 
+{
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #6541c1;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background-color: #695487;
+}
+
+#generate 
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.result
+{
+    display: flex;
+    gap: 8px;
+}
+
+#password 
+{
+    width: 100%;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid #877070;
+    border-radius: 6px;
+}
+
+
+#copy 
+{
+    background: #18a65b;
+    cursor: pointer;
+}
+
+#copy:hover
+{
+    background-color: rgb(83, 193, 114);
+}
+
+#message 
+{
+    text-align: center;
+    margin-top: 15px;
+    color: #18a65b;
+    font-size: 14px;
+}
+
+@media (max-width: 400px) 
+{
+    .container 
+    {
+        padding: 20px;
+    }
+
+    h1 
+    {
+        font-size: 23px;
+    }
+    .option
+    {
+        grid-template-columns: 1fr;
+    }
+}
